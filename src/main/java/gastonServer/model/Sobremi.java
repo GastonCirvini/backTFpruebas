@@ -1,6 +1,7 @@
 
 package gastonServer.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,9 +12,9 @@ public class Sobremi {
     
     @Id
     @GeneratedValue (strategy = GenerationType.AUTO)
-    
     private Long id;
-    
+   
+    @Column(length=4000)  
   private String datos;
 
   

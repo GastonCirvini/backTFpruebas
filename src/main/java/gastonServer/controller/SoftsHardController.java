@@ -28,7 +28,7 @@ public class SoftsHardController {
        return sof.verSoftsHard();
     }
     
-    @DeleteMapping ("/borrar/soft")
+    @DeleteMapping ("/borrar/soft/{id}")
     public void borrarSoft (@PathVariable Long id){
         sof.borrarSoftsHard(id);
     }
